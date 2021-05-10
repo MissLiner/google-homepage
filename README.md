@@ -1,0 +1,1 @@
+This project will deconstruct and reconstruct the Google homepage, with an emphasis on learning placement and layout over functionality.
