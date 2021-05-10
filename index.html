@@ -9,11 +9,14 @@
     margin-right: auto;
 }
 #logo {
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 #search-box {
-    width: 90%;
-    color: red;
+    width: 89%;
+    height: 42px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
 }
 .top-nav {
     list-style-type: none;
@@ -47,20 +50,46 @@ li {
     text-decoration:  none;
 }
 
-.search-btns {
-    margin: 0;
-  position: absolute;
-  padding-top: 30px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.search {
+    position: relative;
+    display: flex;
+    min-width: 100px;
 }
-.buttons {
-    
-    text-decoration:  none;
- 
+.search-icon {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+    width: 14px;
+    width: 15px;
 }
 
+.search-btns {
+position: absolute;
+    margin: 0;
+  padding-top: 100px;
+  left: 48%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+.button1 {
+    
+    text-decoration:  none;
+    background-color: rgb(232, 236, 232);
+    color: darkslategray;
+    padding: 10px;
+    border-radius: 5px;
+}
+ 
+.button2 {
+    
+    text-decoration:  none;
+    background-color: rgb(232, 236, 232);
+    color: darkslategray;
+    padding: 10px;
+    border-radius: 5px;
+ 
+}
 </style>
 <body>
     <div>
@@ -73,12 +102,15 @@ li {
     </div>
     <div>
     <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <input id= "search-box" class="center" type="text">
     </div>
+    <div class="search">
+    <input id= "search-box" class="center" type="text">
+<img class="search-icon" src="search-mag.png">   
+</div>
     <div>
         <ul class="search-btns">
-            <li><a class="buttons" href="">Google Search</a></li>
-            <li><a class="buttons" href="">I'm Feeling Lucky</a></li>
+            <li><a class="button1" href="">Google Search</a></li>
+            <li><a class="button2" href="">I'm Feeling Lucky</a></li>
         </ul>
     </div>
 </body>
