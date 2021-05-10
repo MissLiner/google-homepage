@@ -11,6 +11,10 @@
 #logo {
     margin-top: 25px;
 }
+#search-box {
+    width: 90%;
+    color: red;
+}
 .top-nav {
     list-style-type: none;
     margin: 0;
@@ -43,6 +47,20 @@ li {
     text-decoration:  none;
 }
 
+.search-btns {
+    margin: 0;
+  position: absolute;
+  padding-top: 30px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.buttons {
+    
+    text-decoration:  none;
+ 
+}
+
 </style>
 <body>
     <div>
@@ -56,6 +74,12 @@ li {
     <div>
     <img id="logo" class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     <input id= "search-box" class="center" type="text">
+    </div>
+    <div>
+        <ul class="search-btns">
+            <li><a class="buttons" href="">Google Search</a></li>
+            <li><a class="buttons" href="">I'm Feeling Lucky</a></li>
+        </ul>
     </div>
 </body>
 <html> 
