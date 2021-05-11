@@ -9,7 +9,7 @@
     margin-right: auto;
 }
 #logo {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 #search-box {
@@ -38,7 +38,7 @@ li {
     color: darkslategrey;
     padding-left: 9px;
     padding-right: 10px;
-    padding-top: 4px;
+    padding-top: 9px;
     text-decoration:  none;
 }
 
@@ -47,18 +47,30 @@ li {
     color: darkslategrey;
     padding-right: 10px;
     padding-left: 9px;
-    padding-top: 4px;
+    padding-top: 9px;
     text-decoration:  none;
-    background-color: tan;
+    background-color:lightgra;
     height: 25px;
+    font-size: 14px;
+}
+
+.d {
+    border-radius: 50%;
+    color: #5f6368;
+    opacity: 1;
+
+    padding-top: 0px;
+    height: 40px;
+}
+.c {
+    border-radius: 50%;
+    background-color: rgb(10, 56, 39);
+    color:white;
+    font-size: 16px;
 }
 .button-icon {
-    
-    background-color: black;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    float: right;
+    width: 10px;
     
 }
 
@@ -69,10 +81,9 @@ li {
 }
 .search-icon {
     position: absolute;
-    top: 14px;
-    left: 50px;
+    top: 16px;
+    left: 8%;
     width: 14px;
-    width: 15px;
 }
 
 .search-btns {
@@ -102,32 +113,53 @@ position: absolute;
     border-radius: 5px;
  
 }
-
-.bottom-nav {
+.bottom-msg {
     list-style-type: none;
     margin: 0;
+    bottom: 50px;
+    left:0;
     padding: 10px;
     background-color:lightgrey;
   overflow: hidden;
   position: fixed;
-  bottom: 0;
-  width: 100%
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  color:darkslategray
+
+  
+}
+
+.bottom-nav {
+    list-style-type: none;
+    margin: 0;
+    bottom: 0;
+    left:0;
+    padding: 10px;
+    background-color:lightgrey;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 
 }
 
 .bottom-btns {
     text-decoration: none;
     color: darkslategray;
-
+  
+   
 }
+
 </style>
 <body>
     <div>
     <ul class="top-nav">
         <li><a class="left" href="https://about.google/a/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
         <li><a class="left" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-        <li><a class="right" href="">C</a></li>
-        <li><a class="button-icon" href=""></li>
+        <li><a class="right c" href="">C</a></li>
+        <li><img class="right d" src="google-nine-dots-trns.png"></li>
         <li><a class="right" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a></li>
         <li><a class="right" href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a></li>
 
@@ -149,10 +181,14 @@ position: absolute;
     </div>
 </body>
 <footer>
+    <div>
+        <a class="bottom-msg">Carbon neutral since 2007</a>
+    </div>
     <ul class="bottom-nav">
         <li><a class="bottom-btns" href="">Advertising</a></li>
         <li><a class="bottom-btns" href="">Business</a></li>
         <li><a class="bottom-btns" href="">How Search Works</a></li>
+        <li><a class="bottom-btns" href=""></a></li>
         <li><a class="bottom-btns" href="">Privacy</a></li>
         <li><a class="bottom-btns" href="">Terms</a></li>
         <li><a class="bottom-btns" href="">Settings</a></li>
